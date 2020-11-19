@@ -8,13 +8,64 @@
 <body>
 
   <p>This is a paragraph</p>
-  <div id="navigation"></div>
+  <!--Contains the navbar and all tabs-->
+  <div class="navbar">
+    <!--Tab for Home contains no dropdown-->
+    <a href="index.html">Home</a>
+
+    <!--Profile Tab-->
+    <div class="dropdown">
+      <button class="dropbtn">Profile 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="drop-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+
+    <!--Academics and Leadership Tab-->
+    <div class="dropdown">
+        <button class="dropbtn">Academic and Leadership Development 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="drop-content">
+          <a href="#">Lead</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+
+    <!--Professional Development Tab-->
+    <div class="dropdown">
+        <button class="dropbtn">Professional Development 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="drop-content">
+          <a href="#">Resume</a>
+          <a href="#">Cover Letter</a>
+          <a href="#">Link 3</a>
+        </div>
+    </div>
+
+    <!--Portfolio Tab-->
+    <div class="dropdown">
+        <button class="dropbtn">Portfolio
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="drop-content">
+          <a href="#">Model the Way</a>
+          <a href="#">Inspire a Shared Vision</a>
+          <a href="#">Challenge the Process</a>
+          <a href="#">Enable Others to Act</a>
+          <a href="#">Encourage the Heart</a>
+        </div>
+    </div>
+
+    <!--Gratitude Wall Tab (Personal Project to include if I have time)-->
+    <a href="#gratitude">Gratitude Wall</a>
+</div>
 
 </body>
 </html>
-
-<script type="text/javascript" src="jquery.3.5.1.js">
-  jQuery(document).ready(function(){
-       jQuery("#navigation").load("nav1.html");
-  });
-</script>
