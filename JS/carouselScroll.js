@@ -5,9 +5,9 @@ function carousel(){
 
     var i;
 
-    var slides = index.html.getElementsByClassName("Image-Slider");
+    var slides = document.getElementsByClassName("Image-Slider");
 
-    var dots = index.html.getElementsByClassName("Dots");
+    var dots = document.getElementsByClassName("dot");
 
     for(i = 0; i < slides.length; ++i){
         slides[i].style.display = "none";
@@ -20,6 +20,11 @@ function carousel(){
     }
 
     for(i = 0 ; i < dots.length; ++i){
-        
+        dots[i].className = dots[i].className.replace("active", "");
     }
+
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+
+    setTimeout(carousel, 5000);
 }
