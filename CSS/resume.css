@@ -1,0 +1,23 @@
+.download-bar{
+    display: flex;
+    justify-content: center;
+    padding: 15px 15px;
+}
+
+.download-button{
+    color: white;
+    background-color: black;
+    margin: 5px;
+    border: none;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.name{
+    text-align: center;
+}
+
+.heading{
+    text-decoration: underline;
+    text-align: center;
+}
